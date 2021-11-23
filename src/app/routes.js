@@ -11,4 +11,8 @@ routes.post("/tasks", TaskController.store);
 
 routes.delete("/tasks/:id", TaskController.delete);
 
+routes.put("/tasks/:id", TaskController.put);
+
+routes.get("/tasks/search", TaskController.search);
+
 module.exports = routes;
